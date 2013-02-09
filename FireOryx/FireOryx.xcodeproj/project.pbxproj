@@ -7,163 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15AD3D0316C692E3004EC27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D0216C692E3004EC27C /* UIKit.framework */; };
-		15AD3D0516C692E3004EC27C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D0416C692E3004EC27C /* Foundation.framework */; };
-		15AD3D0716C692E3004EC27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D0616C692E3004EC27C /* CoreGraphics.framework */; };
-		15AD3D0D16C692E3004EC27C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D0B16C692E3004EC27C /* InfoPlist.strings */; };
-		15AD3D0F16C692E3004EC27C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3D0E16C692E3004EC27C /* main.m */; };
-		15AD3D1316C692E3004EC27C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3D1216C692E3004EC27C /* AppDelegate.m */; };
-		15AD3D1516C692E3004EC27C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D1416C692E3004EC27C /* Default.png */; };
-		15AD3D1716C692E3004EC27C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D1616C692E3004EC27C /* Default@2x.png */; };
-		15AD3D1916C692E3004EC27C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D1816C692E3004EC27C /* Default-568h@2x.png */; };
-		15AD3D1C16C692E3004EC27C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D1A16C692E3004EC27C /* MainStoryboard_iPhone.storyboard */; };
-		15AD3D1F16C692E3004EC27C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D1D16C692E3004EC27C /* MainStoryboard_iPad.storyboard */; };
-		15AD3D2216C692E3004EC27C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3D2116C692E3004EC27C /* MasterViewController.m */; };
-		15AD3D2516C692E3004EC27C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3D2416C692E3004EC27C /* DetailViewController.m */; };
-		15AD3D2D16C692E4004EC27C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D2C16C692E4004EC27C /* SenTestingKit.framework */; };
-		15AD3D2E16C692E4004EC27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D0216C692E3004EC27C /* UIKit.framework */; };
-		15AD3D2F16C692E4004EC27C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AD3D0416C692E3004EC27C /* Foundation.framework */; };
-		15AD3D3716C692E4004EC27C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15AD3D3516C692E4004EC27C /* InfoPlist.strings */; };
-		15AD3D3A16C692E4004EC27C /* FireOryxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AD3D3916C692E4004EC27C /* FireOryxTests.m */; };
+		1563BDC916C69D0700185D78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDC816C69D0700185D78 /* UIKit.framework */; };
+		1563BDCB16C69D0700185D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDCA16C69D0700185D78 /* Foundation.framework */; };
+		1563BDCD16C69D0700185D78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDCC16C69D0700185D78 /* CoreGraphics.framework */; };
+		1563BDD316C69D0700185D78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDD116C69D0700185D78 /* InfoPlist.strings */; };
+		1563BDD516C69D0700185D78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BDD416C69D0700185D78 /* main.m */; };
+		1563BDD916C69D0700185D78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BDD816C69D0700185D78 /* AppDelegate.m */; };
+		1563BDDB16C69D0700185D78 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDDA16C69D0700185D78 /* Default.png */; };
+		1563BDDD16C69D0700185D78 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDDC16C69D0700185D78 /* Default@2x.png */; };
+		1563BDDF16C69D0700185D78 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDDE16C69D0700185D78 /* Default-568h@2x.png */; };
+		1563BDE216C69D0700185D78 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDE016C69D0700185D78 /* MainStoryboard_iPhone.storyboard */; };
+		1563BDE516C69D0700185D78 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDE316C69D0700185D78 /* MainStoryboard_iPad.storyboard */; };
+		1563BDE816C69D0700185D78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BDE716C69D0700185D78 /* ViewController.m */; };
+		1563BDF016C69D0700185D78 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDEF16C69D0700185D78 /* SenTestingKit.framework */; };
+		1563BDF116C69D0700185D78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDC816C69D0700185D78 /* UIKit.framework */; };
+		1563BDF216C69D0700185D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDCA16C69D0700185D78 /* Foundation.framework */; };
+		1563BDFA16C69D0700185D78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1563BDF816C69D0700185D78 /* InfoPlist.strings */; };
+		1563BDFD16C69D0700185D78 /* FireOryxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BDFC16C69D0700185D78 /* FireOryxTests.m */; };
+		1563BE0716C6A08700185D78 /* cooltext913452511.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BE0616C6A08700185D78 /* cooltext913452511.png */; };
+		1563BE0916C6A95E00185D78 /* SocketRocket in Resources */ = {isa = PBXBuildFile; fileRef = 1563BE0816C6A95E00185D78 /* SocketRocket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		15AD3D3016C692E4004EC27C /* PBXContainerItemProxy */ = {
+		1563BDF316C69D0700185D78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15AD3CF716C692E3004EC27C /* Project object */;
+			containerPortal = 1563BDBD16C69D0700185D78 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 15AD3CFE16C692E3004EC27C;
+			remoteGlobalIDString = 1563BDC416C69D0700185D78;
 			remoteInfo = FireOryx;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15AD3CFF16C692E3004EC27C /* FireOryx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireOryx.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		15AD3D0216C692E3004EC27C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		15AD3D0416C692E3004EC27C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		15AD3D0616C692E3004EC27C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		15AD3D0A16C692E3004EC27C /* FireOryx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FireOryx-Info.plist"; sourceTree = "<group>"; };
-		15AD3D0C16C692E3004EC27C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15AD3D0E16C692E3004EC27C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		15AD3D1016C692E3004EC27C /* FireOryx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FireOryx-Prefix.pch"; sourceTree = "<group>"; };
-		15AD3D1116C692E3004EC27C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		15AD3D1216C692E3004EC27C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15AD3D1416C692E3004EC27C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		15AD3D1616C692E3004EC27C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		15AD3D1816C692E3004EC27C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		15AD3D1B16C692E3004EC27C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		15AD3D1E16C692E3004EC27C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		15AD3D2016C692E3004EC27C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		15AD3D2116C692E3004EC27C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		15AD3D2316C692E3004EC27C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		15AD3D2416C692E3004EC27C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		15AD3D2B16C692E4004EC27C /* FireOryxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireOryxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15AD3D2C16C692E4004EC27C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		15AD3D3416C692E4004EC27C /* FireOryxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FireOryxTests-Info.plist"; sourceTree = "<group>"; };
-		15AD3D3616C692E4004EC27C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15AD3D3816C692E4004EC27C /* FireOryxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireOryxTests.h; sourceTree = "<group>"; };
-		15AD3D3916C692E4004EC27C /* FireOryxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireOryxTests.m; sourceTree = "<group>"; };
+		1563BDC516C69D0700185D78 /* FireOryx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireOryx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1563BDC816C69D0700185D78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1563BDCA16C69D0700185D78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1563BDCC16C69D0700185D78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1563BDD016C69D0700185D78 /* FireOryx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FireOryx-Info.plist"; sourceTree = "<group>"; };
+		1563BDD216C69D0700185D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1563BDD416C69D0700185D78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1563BDD616C69D0700185D78 /* FireOryx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FireOryx-Prefix.pch"; sourceTree = "<group>"; };
+		1563BDD716C69D0700185D78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1563BDD816C69D0700185D78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1563BDDA16C69D0700185D78 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1563BDDC16C69D0700185D78 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1563BDDE16C69D0700185D78 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1563BDE116C69D0700185D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1563BDE416C69D0700185D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		1563BDE616C69D0700185D78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1563BDE716C69D0700185D78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1563BDEE16C69D0700185D78 /* FireOryxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireOryxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1563BDEF16C69D0700185D78 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1563BDF716C69D0700185D78 /* FireOryxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FireOryxTests-Info.plist"; sourceTree = "<group>"; };
+		1563BDF916C69D0700185D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1563BDFB16C69D0700185D78 /* FireOryxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireOryxTests.h; sourceTree = "<group>"; };
+		1563BDFC16C69D0700185D78 /* FireOryxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireOryxTests.m; sourceTree = "<group>"; };
+		1563BE0616C6A08700185D78 /* cooltext913452511.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooltext913452511.png; sourceTree = "<group>"; };
+		1563BE0816C6A95E00185D78 /* SocketRocket */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SocketRocket; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15AD3CFC16C692E3004EC27C /* Frameworks */ = {
+		1563BDC216C69D0700185D78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D0316C692E3004EC27C /* UIKit.framework in Frameworks */,
-				15AD3D0516C692E3004EC27C /* Foundation.framework in Frameworks */,
-				15AD3D0716C692E3004EC27C /* CoreGraphics.framework in Frameworks */,
+				1563BDC916C69D0700185D78 /* UIKit.framework in Frameworks */,
+				1563BDCB16C69D0700185D78 /* Foundation.framework in Frameworks */,
+				1563BDCD16C69D0700185D78 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15AD3D2716C692E4004EC27C /* Frameworks */ = {
+		1563BDEA16C69D0700185D78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D2D16C692E4004EC27C /* SenTestingKit.framework in Frameworks */,
-				15AD3D2E16C692E4004EC27C /* UIKit.framework in Frameworks */,
-				15AD3D2F16C692E4004EC27C /* Foundation.framework in Frameworks */,
+				1563BDF016C69D0700185D78 /* SenTestingKit.framework in Frameworks */,
+				1563BDF116C69D0700185D78 /* UIKit.framework in Frameworks */,
+				1563BDF216C69D0700185D78 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15AD3CF616C692E3004EC27C = {
+		1563BDBC16C69D0700185D78 = {
 			isa = PBXGroup;
 			children = (
-				15AD3D0816C692E3004EC27C /* FireOryx */,
-				15AD3D3216C692E4004EC27C /* FireOryxTests */,
-				15AD3D0116C692E3004EC27C /* Frameworks */,
-				15AD3D0016C692E3004EC27C /* Products */,
+				1563BDCE16C69D0700185D78 /* FireOryx */,
+				1563BDF516C69D0700185D78 /* FireOryxTests */,
+				1563BDC716C69D0700185D78 /* Frameworks */,
+				1563BDC616C69D0700185D78 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		15AD3D0016C692E3004EC27C /* Products */ = {
+		1563BDC616C69D0700185D78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3CFF16C692E3004EC27C /* FireOryx.app */,
-				15AD3D2B16C692E4004EC27C /* FireOryxTests.octest */,
+				1563BDC516C69D0700185D78 /* FireOryx.app */,
+				1563BDEE16C69D0700185D78 /* FireOryxTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		15AD3D0116C692E3004EC27C /* Frameworks */ = {
+		1563BDC716C69D0700185D78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3D0216C692E3004EC27C /* UIKit.framework */,
-				15AD3D0416C692E3004EC27C /* Foundation.framework */,
-				15AD3D0616C692E3004EC27C /* CoreGraphics.framework */,
-				15AD3D2C16C692E4004EC27C /* SenTestingKit.framework */,
+				1563BDC816C69D0700185D78 /* UIKit.framework */,
+				1563BDCA16C69D0700185D78 /* Foundation.framework */,
+				1563BDCC16C69D0700185D78 /* CoreGraphics.framework */,
+				1563BDEF16C69D0700185D78 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		15AD3D0816C692E3004EC27C /* FireOryx */ = {
+		1563BDCE16C69D0700185D78 /* FireOryx */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3D1116C692E3004EC27C /* AppDelegate.h */,
-				15AD3D1216C692E3004EC27C /* AppDelegate.m */,
-				15AD3D1A16C692E3004EC27C /* MainStoryboard_iPhone.storyboard */,
-				15AD3D1D16C692E3004EC27C /* MainStoryboard_iPad.storyboard */,
-				15AD3D2016C692E3004EC27C /* MasterViewController.h */,
-				15AD3D2116C692E3004EC27C /* MasterViewController.m */,
-				15AD3D2316C692E3004EC27C /* DetailViewController.h */,
-				15AD3D2416C692E3004EC27C /* DetailViewController.m */,
-				15AD3D0916C692E3004EC27C /* Supporting Files */,
+				1563BE0816C6A95E00185D78 /* SocketRocket */,
+				1563BE0616C6A08700185D78 /* cooltext913452511.png */,
+				1563BDD716C69D0700185D78 /* AppDelegate.h */,
+				1563BDD816C69D0700185D78 /* AppDelegate.m */,
+				1563BDE016C69D0700185D78 /* MainStoryboard_iPhone.storyboard */,
+				1563BDE316C69D0700185D78 /* MainStoryboard_iPad.storyboard */,
+				1563BDE616C69D0700185D78 /* ViewController.h */,
+				1563BDE716C69D0700185D78 /* ViewController.m */,
+				1563BDCF16C69D0700185D78 /* Supporting Files */,
 			);
 			path = FireOryx;
 			sourceTree = "<group>";
 		};
-		15AD3D0916C692E3004EC27C /* Supporting Files */ = {
+		1563BDCF16C69D0700185D78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3D0A16C692E3004EC27C /* FireOryx-Info.plist */,
-				15AD3D0B16C692E3004EC27C /* InfoPlist.strings */,
-				15AD3D0E16C692E3004EC27C /* main.m */,
-				15AD3D1016C692E3004EC27C /* FireOryx-Prefix.pch */,
-				15AD3D1416C692E3004EC27C /* Default.png */,
-				15AD3D1616C692E3004EC27C /* Default@2x.png */,
-				15AD3D1816C692E3004EC27C /* Default-568h@2x.png */,
+				1563BDD016C69D0700185D78 /* FireOryx-Info.plist */,
+				1563BDD116C69D0700185D78 /* InfoPlist.strings */,
+				1563BDD416C69D0700185D78 /* main.m */,
+				1563BDD616C69D0700185D78 /* FireOryx-Prefix.pch */,
+				1563BDDA16C69D0700185D78 /* Default.png */,
+				1563BDDC16C69D0700185D78 /* Default@2x.png */,
+				1563BDDE16C69D0700185D78 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		15AD3D3216C692E4004EC27C /* FireOryxTests */ = {
+		1563BDF516C69D0700185D78 /* FireOryxTests */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3D3816C692E4004EC27C /* FireOryxTests.h */,
-				15AD3D3916C692E4004EC27C /* FireOryxTests.m */,
-				15AD3D3316C692E4004EC27C /* Supporting Files */,
+				1563BDFB16C69D0700185D78 /* FireOryxTests.h */,
+				1563BDFC16C69D0700185D78 /* FireOryxTests.m */,
+				1563BDF616C69D0700185D78 /* Supporting Files */,
 			);
 			path = FireOryxTests;
 			sourceTree = "<group>";
 		};
-		15AD3D3316C692E4004EC27C /* Supporting Files */ = {
+		1563BDF616C69D0700185D78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				15AD3D3416C692E4004EC27C /* FireOryxTests-Info.plist */,
-				15AD3D3516C692E4004EC27C /* InfoPlist.strings */,
+				1563BDF716C69D0700185D78 /* FireOryxTests-Info.plist */,
+				1563BDF816C69D0700185D78 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,13 +172,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15AD3CFE16C692E3004EC27C /* FireOryx */ = {
+		1563BDC416C69D0700185D78 /* FireOryx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15AD3D3D16C692E4004EC27C /* Build configuration list for PBXNativeTarget "FireOryx" */;
+			buildConfigurationList = 1563BE0016C69D0700185D78 /* Build configuration list for PBXNativeTarget "FireOryx" */;
 			buildPhases = (
-				15AD3CFB16C692E3004EC27C /* Sources */,
-				15AD3CFC16C692E3004EC27C /* Frameworks */,
-				15AD3CFD16C692E3004EC27C /* Resources */,
+				1563BDC116C69D0700185D78 /* Sources */,
+				1563BDC216C69D0700185D78 /* Frameworks */,
+				1563BDC316C69D0700185D78 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -185,81 +186,83 @@
 			);
 			name = FireOryx;
 			productName = FireOryx;
-			productReference = 15AD3CFF16C692E3004EC27C /* FireOryx.app */;
+			productReference = 1563BDC516C69D0700185D78 /* FireOryx.app */;
 			productType = "com.apple.product-type.application";
 		};
-		15AD3D2A16C692E4004EC27C /* FireOryxTests */ = {
+		1563BDED16C69D0700185D78 /* FireOryxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15AD3D4016C692E4004EC27C /* Build configuration list for PBXNativeTarget "FireOryxTests" */;
+			buildConfigurationList = 1563BE0316C69D0700185D78 /* Build configuration list for PBXNativeTarget "FireOryxTests" */;
 			buildPhases = (
-				15AD3D2616C692E4004EC27C /* Sources */,
-				15AD3D2716C692E4004EC27C /* Frameworks */,
-				15AD3D2816C692E4004EC27C /* Resources */,
-				15AD3D2916C692E4004EC27C /* ShellScript */,
+				1563BDE916C69D0700185D78 /* Sources */,
+				1563BDEA16C69D0700185D78 /* Frameworks */,
+				1563BDEB16C69D0700185D78 /* Resources */,
+				1563BDEC16C69D0700185D78 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				15AD3D3116C692E4004EC27C /* PBXTargetDependency */,
+				1563BDF416C69D0700185D78 /* PBXTargetDependency */,
 			);
 			name = FireOryxTests;
 			productName = FireOryxTests;
-			productReference = 15AD3D2B16C692E4004EC27C /* FireOryxTests.octest */;
+			productReference = 1563BDEE16C69D0700185D78 /* FireOryxTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		15AD3CF716C692E3004EC27C /* Project object */ = {
+		1563BDBD16C69D0700185D78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = icl;
 			};
-			buildConfigurationList = 15AD3CFA16C692E3004EC27C /* Build configuration list for PBXProject "FireOryx" */;
+			buildConfigurationList = 1563BDC016C69D0700185D78 /* Build configuration list for PBXProject "FireOryx" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 15AD3CF616C692E3004EC27C;
-			productRefGroup = 15AD3D0016C692E3004EC27C /* Products */;
+			mainGroup = 1563BDBC16C69D0700185D78;
+			productRefGroup = 1563BDC616C69D0700185D78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15AD3CFE16C692E3004EC27C /* FireOryx */,
-				15AD3D2A16C692E4004EC27C /* FireOryxTests */,
+				1563BDC416C69D0700185D78 /* FireOryx */,
+				1563BDED16C69D0700185D78 /* FireOryxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		15AD3CFD16C692E3004EC27C /* Resources */ = {
+		1563BDC316C69D0700185D78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D0D16C692E3004EC27C /* InfoPlist.strings in Resources */,
-				15AD3D1516C692E3004EC27C /* Default.png in Resources */,
-				15AD3D1716C692E3004EC27C /* Default@2x.png in Resources */,
-				15AD3D1916C692E3004EC27C /* Default-568h@2x.png in Resources */,
-				15AD3D1C16C692E3004EC27C /* MainStoryboard_iPhone.storyboard in Resources */,
-				15AD3D1F16C692E3004EC27C /* MainStoryboard_iPad.storyboard in Resources */,
+				1563BDD316C69D0700185D78 /* InfoPlist.strings in Resources */,
+				1563BDDB16C69D0700185D78 /* Default.png in Resources */,
+				1563BDDD16C69D0700185D78 /* Default@2x.png in Resources */,
+				1563BDDF16C69D0700185D78 /* Default-568h@2x.png in Resources */,
+				1563BDE216C69D0700185D78 /* MainStoryboard_iPhone.storyboard in Resources */,
+				1563BDE516C69D0700185D78 /* MainStoryboard_iPad.storyboard in Resources */,
+				1563BE0716C6A08700185D78 /* cooltext913452511.png in Resources */,
+				1563BE0916C6A95E00185D78 /* SocketRocket in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15AD3D2816C692E4004EC27C /* Resources */ = {
+		1563BDEB16C69D0700185D78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D3716C692E4004EC27C /* InfoPlist.strings in Resources */,
+				1563BDFA16C69D0700185D78 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15AD3D2916C692E4004EC27C /* ShellScript */ = {
+		1563BDEC16C69D0700185D78 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,64 +278,63 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		15AD3CFB16C692E3004EC27C /* Sources */ = {
+		1563BDC116C69D0700185D78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D0F16C692E3004EC27C /* main.m in Sources */,
-				15AD3D1316C692E3004EC27C /* AppDelegate.m in Sources */,
-				15AD3D2216C692E3004EC27C /* MasterViewController.m in Sources */,
-				15AD3D2516C692E3004EC27C /* DetailViewController.m in Sources */,
+				1563BDD516C69D0700185D78 /* main.m in Sources */,
+				1563BDD916C69D0700185D78 /* AppDelegate.m in Sources */,
+				1563BDE816C69D0700185D78 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15AD3D2616C692E4004EC27C /* Sources */ = {
+		1563BDE916C69D0700185D78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AD3D3A16C692E4004EC27C /* FireOryxTests.m in Sources */,
+				1563BDFD16C69D0700185D78 /* FireOryxTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		15AD3D3116C692E4004EC27C /* PBXTargetDependency */ = {
+		1563BDF416C69D0700185D78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 15AD3CFE16C692E3004EC27C /* FireOryx */;
-			targetProxy = 15AD3D3016C692E4004EC27C /* PBXContainerItemProxy */;
+			target = 1563BDC416C69D0700185D78 /* FireOryx */;
+			targetProxy = 1563BDF316C69D0700185D78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		15AD3D0B16C692E3004EC27C /* InfoPlist.strings */ = {
+		1563BDD116C69D0700185D78 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15AD3D0C16C692E3004EC27C /* en */,
+				1563BDD216C69D0700185D78 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		15AD3D1A16C692E3004EC27C /* MainStoryboard_iPhone.storyboard */ = {
+		1563BDE016C69D0700185D78 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15AD3D1B16C692E3004EC27C /* en */,
+				1563BDE116C69D0700185D78 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		15AD3D1D16C692E3004EC27C /* MainStoryboard_iPad.storyboard */ = {
+		1563BDE316C69D0700185D78 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15AD3D1E16C692E3004EC27C /* en */,
+				1563BDE416C69D0700185D78 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		15AD3D3516C692E4004EC27C /* InfoPlist.strings */ = {
+		1563BDF816C69D0700185D78 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				15AD3D3616C692E4004EC27C /* en */,
+				1563BDF916C69D0700185D78 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +342,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		15AD3D3B16C692E4004EC27C /* Debug */ = {
+		1563BDFE16C69D0700185D78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +374,7 @@
 			};
 			name = Debug;
 		};
-		15AD3D3C16C692E4004EC27C /* Release */ = {
+		1563BDFF16C69D0700185D78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,35 +400,33 @@
 			};
 			name = Release;
 		};
-		15AD3D3E16C692E4004EC27C /* Debug */ = {
+		1563BE0116C69D0700185D78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andreea Ingrid Funie (87757F82P9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireOryx/FireOryx-Prefix.pch";
 				INFOPLIST_FILE = "FireOryx/FireOryx-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F087EC81-4229-4D33-821E-033487B864A1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		15AD3D3F16C692E4004EC27C /* Release */ = {
+		1563BE0216C69D0700185D78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andreea Ingrid Funie (87757F82P9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireOryx/FireOryx-Prefix.pch";
 				INFOPLIST_FILE = "FireOryx/FireOryx-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F087EC81-4229-4D33-821E-033487B864A1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		15AD3D4116C692E4004EC27C /* Debug */ = {
+		1563BE0416C69D0700185D78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FireOryx.app/FireOryx";
@@ -443,7 +443,7 @@
 			};
 			name = Debug;
 		};
-		15AD3D4216C692E4004EC27C /* Release */ = {
+		1563BE0516C69D0700185D78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FireOryx.app/FireOryx";
@@ -463,32 +463,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15AD3CFA16C692E3004EC27C /* Build configuration list for PBXProject "FireOryx" */ = {
+		1563BDC016C69D0700185D78 /* Build configuration list for PBXProject "FireOryx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15AD3D3B16C692E4004EC27C /* Debug */,
-				15AD3D3C16C692E4004EC27C /* Release */,
+				1563BDFE16C69D0700185D78 /* Debug */,
+				1563BDFF16C69D0700185D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15AD3D3D16C692E4004EC27C /* Build configuration list for PBXNativeTarget "FireOryx" */ = {
+		1563BE0016C69D0700185D78 /* Build configuration list for PBXNativeTarget "FireOryx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15AD3D3E16C692E4004EC27C /* Debug */,
-				15AD3D3F16C692E4004EC27C /* Release */,
+				1563BE0116C69D0700185D78 /* Debug */,
+				1563BE0216C69D0700185D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		15AD3D4016C692E4004EC27C /* Build configuration list for PBXNativeTarget "FireOryxTests" */ = {
+		1563BE0316C69D0700185D78 /* Build configuration list for PBXNativeTarget "FireOryxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15AD3D4116C692E4004EC27C /* Debug */,
-				15AD3D4216C692E4004EC27C /* Release */,
+				1563BE0416C69D0700185D78 /* Debug */,
+				1563BE0516C69D0700185D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 15AD3CF716C692E3004EC27C /* Project object */;
+	rootObject = 1563BDBD16C69D0700185D78 /* Project object */;
 }

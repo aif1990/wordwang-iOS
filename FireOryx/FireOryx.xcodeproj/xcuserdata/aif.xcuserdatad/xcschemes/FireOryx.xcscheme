@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15AD3CFE16C692E3004EC27C"
+               BlueprintIdentifier = "1563BDC416C69D0700185D78"
                BuildableName = "FireOryx.app"
                BlueprintName = "FireOryx"
                ReferencedContainer = "container:FireOryx.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15AD3D2A16C692E4004EC27C"
+               BlueprintIdentifier = "1563BDED16C69D0700185D78"
                BuildableName = "FireOryxTests.octest"
                BlueprintName = "FireOryxTests"
                ReferencedContainer = "container:FireOryx.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15AD3CFE16C692E3004EC27C"
+            BlueprintIdentifier = "1563BDC416C69D0700185D78"
             BuildableName = "FireOryx.app"
             BlueprintName = "FireOryx"
             ReferencedContainer = "container:FireOryx.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15AD3CFE16C692E3004EC27C"
+            BlueprintIdentifier = "1563BDC416C69D0700185D78"
             BuildableName = "FireOryx.app"
             BlueprintName = "FireOryx"
             ReferencedContainer = "container:FireOryx.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15AD3CFE16C692E3004EC27C"
+            BlueprintIdentifier = "1563BDC416C69D0700185D78"
             BuildableName = "FireOryx.app"
             BlueprintName = "FireOryx"
             ReferencedContainer = "container:FireOryx.xcodeproj">

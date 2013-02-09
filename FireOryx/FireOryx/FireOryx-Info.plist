@@ -5,9 +5,22 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>WordWang</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>cooltext913502623.png</string>
+				<string>cooltext913502623 copy.png</string>
+				<string>cooltext913513874.png</string>
+				<string>cooltext913513874 copy.png</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>uk.ac.imperial.${PRODUCT_NAME}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

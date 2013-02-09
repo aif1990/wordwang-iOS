@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet NSString *group;
+}
+
+-(IBAction)connect;
+
+-(IBAction)textFieldDoneEditing:(id)sender;
+
+-(IBAction)backgroundClick:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *myGroup;
+@property (weak, nonatomic) IBOutlet UITextView *myText;
 
 @end

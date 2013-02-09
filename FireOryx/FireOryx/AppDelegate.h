@@ -7,9 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketRocket/SRWebSocket.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#define BigDelegate \
+((AppDelegate*) [UIApplication sharedApplication].delegate)
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, SRWebSocketDelegate>
+{
+    NSString *myGroup;
+    SRWebSocket* myWS;
+    bool loggedIn;
+    NSMutableArray* story;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+- (bool) getStatus;
+- (NSString*) getGroup;
+- (NSMutableArray*) getStory;
+- (void) connect:(NSString* )group;
+- (void) doConnect:(NSString* )group;
 
 @end

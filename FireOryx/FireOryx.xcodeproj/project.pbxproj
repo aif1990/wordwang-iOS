@@ -63,6 +63,8 @@
 		1563BEAD16C6CABD00185D78 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BEAC16C6CABD00185D78 /* libicucore.dylib */; };
 		1563BEB116C7006900185D78 /* StoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BEB016C7006900185D78 /* StoryPage.m */; };
 		1563BEB216C7006900185D78 /* StoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1563BEB016C7006900185D78 /* StoryPage.m */; };
+		1563BEB716C704EC00185D78 /* cooltext913804755.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BEB616C704EB00185D78 /* cooltext913804755.png */; };
+		1563BEB816C704EC00185D78 /* cooltext913804755.png in Resources */ = {isa = PBXBuildFile; fileRef = 1563BEB616C704EB00185D78 /* cooltext913804755.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,7 @@
 		1563BEAC16C6CABD00185D78 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		1563BEAF16C7006900185D78 /* StoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryPage.h; sourceTree = "<group>"; };
 		1563BEB016C7006900185D78 /* StoryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPage.m; sourceTree = "<group>"; };
+		1563BEB616C704EB00185D78 /* cooltext913804755.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooltext913804755.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,7 @@
 		1563BDCE16C69D0700185D78 /* FireOryx */ = {
 			isa = PBXGroup;
 			children = (
+				1563BEB616C704EB00185D78 /* cooltext913804755.png */,
 				1563BE7216C6C40B00185D78 /* JSON */,
 				1563BE6416C6C3E000185D78 /* SocketRocket */,
 				1563BE0616C6A08700185D78 /* cooltext913452511.png */,
@@ -384,6 +388,7 @@
 				1563BE0716C6A08700185D78 /* cooltext913452511.png in Resources */,
 				1563BE1916C6B0C000185D78 /* cooltext913513874.png in Resources */,
 				1563BE1B16C6B0C500185D78 /* cooltext913513874 copy.png in Resources */,
+				1563BEB716C704EC00185D78 /* cooltext913804755.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1563BDFA16C69D0700185D78 /* InfoPlist.strings in Resources */,
+				1563BEB816C704EC00185D78 /* cooltext913804755.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

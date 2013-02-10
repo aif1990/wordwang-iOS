@@ -25,7 +25,7 @@
                                     <action selector="backgroundClick:" destination="2" eventType="touchUpInside" id="M7T-iQ-pIv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cooltext913452511.png" translatesAutoresizingMaskIntoConstraints="NO" id="QpR-N5-5g2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cooltext913804755.png" translatesAutoresizingMaskIntoConstraints="NO" id="QpR-N5-5g2">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="FB1-xB-YYz"/>
                                     <constraint firstAttribute="height" constant="125" id="Ncz-DP-7Cp"/>
@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="30" id="rzJ-qe-2X0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="textFieldDoneEditing:" destination="2" eventType="editingDidEnd" id="40W-wL-mj8"/>
                                 </connections>
@@ -115,7 +115,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTD-XL-evO">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="INF-kW-sae"/>
+                                    <constraint firstAttribute="height" constant="51" id="F7A-y1-nmH"/>
+                                    <constraint firstAttribute="width" constant="100" id="fcP-zu-JxU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -130,9 +131,6 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Leave" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k58-k4-9QS">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="eIf-mK-opI"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -146,16 +144,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rzq-he-pJZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Gh0-XA-IPf"/>
+                                    <constraint firstAttribute="height" constant="30" id="NZO-aT-VXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add Idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-mQ-FV9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="237-xd-6cX"/>
+                                    <constraint firstAttribute="width" constant="124" id="HTD-31-WVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3rK-iW-zRg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2vL-Zx-Z9M"/>
                             <constraint firstItem="3rK-iW-zRg" firstAttribute="top" secondItem="4vK-bd-2Iq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EEW-eA-tMU"/>
+                            <constraint firstItem="Rzq-he-pJZ" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="33" id="FaF-dx-ENm"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="trailing" secondItem="k58-k4-9QS" secondAttribute="trailing" type="default" id="GGC-fX-cFq"/>
                             <constraint firstItem="k58-k4-9QS" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GXK-x8-0qP"/>
                             <constraint firstItem="3rK-iW-zRg" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Gx2-Qh-PSz"/>
+                            <constraint firstItem="AI9-mQ-FV9" firstAttribute="baseline" secondItem="Rzq-he-pJZ" secondAttribute="baseline" type="default" id="IzJ-hd-i2H"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KaH-w0-Rak"/>
+                            <constraint firstAttribute="trailing" secondItem="AI9-mQ-FV9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="MVk-J5-HNU"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="top" secondItem="k58-k4-9QS" secondAttribute="top" type="default" id="UT6-P8-9lY"/>
+                            <constraint firstAttribute="bottom" secondItem="AI9-mQ-FV9" secondAttribute="bottom" constant="86" id="YeS-Zt-uhv"/>
                             <constraint firstAttribute="bottom" secondItem="k58-k4-9QS" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YyC-FK-wR5"/>
                             <constraint firstAttribute="bottom" secondItem="wTD-XL-evO" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="hxd-xy-ybx"/>
                         </constraints>
@@ -170,7 +189,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cooltext913452511.png" width="420" height="121"/>
+        <image name="cooltext913804755.png" width="436" height="121"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">

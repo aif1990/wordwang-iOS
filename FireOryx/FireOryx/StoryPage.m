@@ -20,7 +20,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
    // NSUserDefaults *name = [NSUserDefaults standardUserDefaults];
-    myText.text = [BigDelegate getStory].description;
+    myText.text = @"bau";
+    //myText.text = [BigDelegate getStory];
+    
+   // NSLog(@"storyLine: %@", [BigDelegate getStory]);
+    
+    [(AppDelegate*)[UIApplication sharedApplication].delegate storyPageLoaded:self];
+}
+
+- (void)updateText:(NSString*)story
+{
+    NSLog(@"storyLine: %@", story);
+    myText.text = story;
+    
 }
 
 - (void)didReceiveMemoryWarning

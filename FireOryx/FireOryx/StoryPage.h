@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
 
 @interface StoryPage : UIViewController {
     NSString *text;
@@ -15,5 +14,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITextView *myText;
+
+-(void)updateText:(NSString*)story;
 
 @end

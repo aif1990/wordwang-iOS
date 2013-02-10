@@ -12,10 +12,19 @@
 
 @implementation AppDelegate
 
+//@synthesize storyPage;
+@synthesize window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     return YES;
+}
+
+- (void) storyPageLoaded:(StoryPage *)sPage
+{
+    storyPage = sPage;
 }
 
 - (void) webSocketDidOpen:(SRWebSocket *)webSocket
@@ -37,11 +46,40 @@
     {
         NSLog(@"Nu am putut parsa mesajul: %@", message);
     }else {
-        story = [resp objectForKey: @"groupStory"];
         
-        NSString* storyline = story.description;
+        /*{"cmd":"refresh",
+           "args":{"groupId":7,
+                   "groupUsers":{"6": {"userName":"ingrid","userId":6}},
+                   "groupStory":[{"content:{"blockContent":"world",
+                                            "blockType":"string"},
+                                  "blockId":1}],
+                   "groupCloud":[{},[]]}}*/
+        
+        NSMutableDictionary* args = [resp objectForKey:@"args"];
+        
+        NSLog(@"am args: %@", args);
+        
+        NSMutableArray *story = [args objectForKey: @"groupStory"];
+        
+        NSMutableArray *storyData = [[NSMutableArray alloc] init];
+        NSMutableDictionary *block;
+        
+        NSLog(@"storyArray: %@ ", story);
+        
+        for (block in story)
+        {
+            NSLog(@"block: %@", block);
+            NSMutableDictionary *content = [block objectForKey:@"content"];
+            NSString *blockContent = [content objectForKey:@"blockContent"];
+            NSLog(@"block Content: %@", blockContent);
+            [storyData addObject:blockContent];
+        }
+        
+        NSString* storyline = storyData.description;
         
         NSLog(@"Story: %@", storyline);
+        
+        [storyPage updateText:storyline];
         
         NSLog(@"Am primit un mesaj nerecunoscut: %@", message);
     }
@@ -86,6 +124,14 @@
     NSLog(@"voi face acest request %@", request);
     
     [myWS send:request];
+    
+    [myWS send:@"{\"cmd\": \"send\", \"args\": {\"blockType\": \"string\", \"blockContent\": \"hello\"}}"];
+    
+    
+    [myWS send:@"{\"cmd\": \"send\", \"args\": {\"blockType\": \"string\", \"blockContent\": \"world\"}}"];
+
+    
+    
 }
 
 - (bool) getStatus
@@ -98,9 +144,9 @@
     return myGroup;
 }
 
-- (NSMutableArray* ) getStory
+- (NSString* ) getStory
 {
-    return story;
+    return storyLine;
 }
 
 

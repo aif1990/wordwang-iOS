@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SocketRocket/SRWebSocket.h"
+#import "StoryPage.h"
 
 #define BigDelegate \
 ((AppDelegate*) [UIApplication sharedApplication].delegate)
@@ -17,15 +18,19 @@
     NSString *myGroup;
     SRWebSocket* myWS;
     bool loggedIn;
-    NSMutableArray* story;
+    NSString* storyLine;
+    StoryPage *storyPage;
 }
 
 @property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) StoryPage *storyPage;
 
 - (bool) getStatus;
 - (NSString*) getGroup;
-- (NSMutableArray*) getStory;
+- (NSString*) getStory;
 - (void) connect:(NSString* )group;
 - (void) doConnect:(NSString* )group;
+- (void) storyPageLoaded:(StoryPage*)sPage;
+
 
 @end

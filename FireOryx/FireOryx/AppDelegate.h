@@ -31,6 +31,7 @@
 - (void) connect:(NSString* )group;
 - (void) doConnect:(NSString* )group;
 - (void) storyPageLoaded:(StoryPage*)sPage;
+- (void) insertWord:(NSString*)word;
 
 
 @end

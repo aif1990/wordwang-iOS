@@ -75,15 +75,35 @@
             [storyData addObject:blockContent];
         }
         
-        NSString* storyline = storyData.description;
+        NSString* word;
+        storyLine = @" ";
         
-        NSLog(@"Story: %@", storyline);
+        for (word in storyData)
+        {
+         
+            NSString *newWord = [word stringByAppendingString:@" "];
+            storyLine = [storyLine stringByAppendingString:newWord];
+        }
         
-        [storyPage updateText:storyline];
+        NSLog(@"Story: %@", storyLine);
+        
+        [storyPage updateText:storyLine];
         
         NSLog(@"Am primit un mesaj nerecunoscut: %@", message);
     }
     
+}
+
+- (void) insertWord:(NSString*)word
+{
+    
+    NSString *initial = @"{\"cmd\": \"send\", \"args\": {\"blockType\": \"string\", \"blockContent\": \"";
+    NSString *req = [initial stringByAppendingString:word];
+    NSString *request = [req stringByAppendingString:@"\"}}"];
+    
+    NSLog(@"request: %@", request);
+    
+    [myWS send:request];
 }
 
 - (void) connect:(NSString* )group

@@ -113,10 +113,22 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixZ-hy-eWy">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundClick:" destination="nuH-Ml-hrI" eventType="touchUpInside" id="LQ1-CR-XNa"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTD-XL-evO">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="F7A-y1-nmH"/>
-                                    <constraint firstAttribute="width" constant="100" id="fcP-zu-JxU"/>
+                                    <constraint firstAttribute="width" constant="100" id="MLp-Yk-9Ql"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -131,6 +143,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Leave" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k58-k4-9QS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="KGK-Eq-btN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,7 +153,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rK-iW-zRg">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="InP-gO-LsN"/>
+                                    <constraint firstAttribute="height" constant="247" id="Im2-SD-oxs"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -151,36 +166,61 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="nuH-Ml-hrI" eventType="editingDidEnd" id="Scb-kq-CLm"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add Idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-mQ-FV9">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="237-xd-6cX"/>
-                                    <constraint firstAttribute="width" constant="124" id="HTD-31-WVi"/>
+                                    <constraint firstAttribute="width" constant="124" id="cE3-7n-C3G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOK-Bc-6h5">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendWord:" destination="nuH-Ml-hrI" eventType="touchUpInside" id="bIy-Oa-0qn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3rK-iW-zRg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2vL-Zx-Z9M"/>
+                            <constraint firstItem="SOK-Bc-6h5" firstAttribute="top" secondItem="AI9-mQ-FV9" secondAttribute="top" type="default" id="3Kt-wL-Yn7"/>
+                            <constraint firstItem="SOK-Bc-6h5" firstAttribute="leading" secondItem="AI9-mQ-FV9" secondAttribute="leading" type="default" id="DfK-9j-jSJ"/>
+                            <constraint firstItem="ixZ-hy-eWy" firstAttribute="top" secondItem="4vK-bd-2Iq" secondAttribute="top" type="default" id="Dxp-RB-2fc"/>
                             <constraint firstItem="3rK-iW-zRg" firstAttribute="top" secondItem="4vK-bd-2Iq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EEW-eA-tMU"/>
                             <constraint firstItem="Rzq-he-pJZ" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="33" id="FaF-dx-ENm"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="trailing" secondItem="k58-k4-9QS" secondAttribute="trailing" type="default" id="GGC-fX-cFq"/>
                             <constraint firstItem="k58-k4-9QS" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GXK-x8-0qP"/>
                             <constraint firstItem="3rK-iW-zRg" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Gx2-Qh-PSz"/>
                             <constraint firstItem="AI9-mQ-FV9" firstAttribute="baseline" secondItem="Rzq-he-pJZ" secondAttribute="baseline" type="default" id="IzJ-hd-i2H"/>
+                            <constraint firstItem="ixZ-hy-eWy" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" type="default" id="JRB-cI-dSa"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="leading" secondItem="4vK-bd-2Iq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KaH-w0-Rak"/>
                             <constraint firstAttribute="trailing" secondItem="AI9-mQ-FV9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="MVk-J5-HNU"/>
+                            <constraint firstAttribute="bottom" secondItem="SOK-Bc-6h5" secondAttribute="bottom" constant="86" id="TJw-9v-ft5"/>
                             <constraint firstItem="wTD-XL-evO" firstAttribute="top" secondItem="k58-k4-9QS" secondAttribute="top" type="default" id="UT6-P8-9lY"/>
-                            <constraint firstAttribute="bottom" secondItem="AI9-mQ-FV9" secondAttribute="bottom" constant="86" id="YeS-Zt-uhv"/>
                             <constraint firstAttribute="bottom" secondItem="k58-k4-9QS" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YyC-FK-wR5"/>
+                            <constraint firstItem="SOK-Bc-6h5" firstAttribute="bottom" secondItem="AI9-mQ-FV9" secondAttribute="bottom" type="default" id="aVq-4c-URE"/>
+                            <constraint firstItem="SOK-Bc-6h5" firstAttribute="centerX" secondItem="AI9-mQ-FV9" secondAttribute="centerX" type="default" id="d6B-RU-rKD"/>
                             <constraint firstAttribute="bottom" secondItem="wTD-XL-evO" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="hxd-xy-ybx"/>
+                            <constraint firstItem="ixZ-hy-eWy" firstAttribute="trailing" secondItem="4vK-bd-2Iq" secondAttribute="trailing" type="default" id="qiX-K5-kBN"/>
+                            <constraint firstItem="ixZ-hy-eWy" firstAttribute="centerY" secondItem="4vK-bd-2Iq" secondAttribute="centerY" type="default" id="vxL-M3-M0f"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myText" destination="3rK-iW-zRg" id="KcF-7N-CtW"/>
+                        <outlet property="myWord" destination="Rzq-he-pJZ" id="Tbf-XG-CCg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pch-T9-C01" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,7 +238,11 @@
         <class className="StoryPage" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StoryPage.h"/>
             <relationships>
+                <relationship kind="action" name="sendWord:"/>
+                <relationship kind="action" name="textFieldDoneEditing:"/>
+                <relationship kind="action" name="updateText:"/>
                 <relationship kind="outlet" name="myText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="myWord" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">

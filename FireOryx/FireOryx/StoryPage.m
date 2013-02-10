@@ -13,6 +13,7 @@
 
 @implementation StoryPage
 @synthesize myText;
+@synthesize myWord;
 
 - (void)viewDidLoad
 {
@@ -32,7 +33,6 @@
 {
     NSLog(@"storyLine: %@", story);
     myText.text = story;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +45,29 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (NSString*)getWord
+{
+    return myWord.text;
+}
+
+- (IBAction)sendWord:(id)sender
+{
+    word = myWord.text;
+    NSLog(@"word: %@", word);
+    [BigDelegate insertWord:word];
+}
+
+- (IBAction)backgroundClick:(id)sender {
+    
+	[myWord resignFirstResponder];
+    
+}
+
+- (IBAction)textFieldDoneEditing:(id)sender
+{
+    [sender resignFirstResponder];
 }
 
 @end

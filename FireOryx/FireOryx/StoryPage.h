@@ -10,11 +10,16 @@
 
 @interface StoryPage : UIViewController {
     NSString *text;
+    NSString *word;
     
 }
 
 @property (weak, nonatomic) IBOutlet UITextView *myText;
+@property (weak, nonatomic) IBOutlet UITextField *myWord;
 
--(void)updateText:(NSString*)story;
+-(IBAction)updateText:(id)sender;
+-(IBAction)sendWord:(id)sender;
+- (IBAction)textFieldDoneEditing:(id)sender;
+-(IBAction)backgroundClick:(id)sender;
 
 @end

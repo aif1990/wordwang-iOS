@@ -59,7 +59,11 @@
         
         NSLog(@"am args: %@", args);
         
-        NSMutableArray *story = [args objectForKey: @"groupStory"];
+        NSMutableDictionary* group = [args objectForKey:@"group"];
+        
+       // NSLog(@"am group: %@", group);
+        
+        NSMutableArray *story = [group objectForKey: @"groupStory"];
         
         NSMutableArray *storyData = [[NSMutableArray alloc] init];
         NSMutableDictionary *block;
@@ -68,10 +72,10 @@
         
         for (block in story)
         {
-            NSLog(@"block: %@", block);
+           // NSLog(@"block: %@", block);
             NSMutableDictionary *content = [block objectForKey:@"content"];
             NSString *blockContent = [content objectForKey:@"blockContent"];
-            NSLog(@"block Content: %@", blockContent);
+            //NSLog(@"block Content: %@", blockContent);
             [storyData addObject:blockContent];
         }
         
@@ -85,7 +89,7 @@
             storyLine = [storyLine stringByAppendingString:newWord];
         }
         
-        NSLog(@"Story: %@", storyLine);
+        //NSLog(@"Story: %@", storyLine);
         
         [storyPage updateText:storyLine];
         
@@ -108,7 +112,7 @@
 
 - (void) connect:(NSString* )group
 {
-    myWS = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://localhost:8888"]]];
+    myWS = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://wang.abstractbinary.org:8888/ws"]]];
     
     myWS.delegate = self;
     
@@ -144,13 +148,6 @@
     NSLog(@"voi face acest request %@", request);
     
     [myWS send:request];
-    
-    [myWS send:@"{\"cmd\": \"send\", \"args\": {\"blockType\": \"string\", \"blockContent\": \"hello\"}}"];
-    
-    
-    [myWS send:@"{\"cmd\": \"send\", \"args\": {\"blockType\": \"string\", \"blockContent\": \"world\"}}"];
-
-    
     
 }
 

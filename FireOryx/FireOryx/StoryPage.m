@@ -34,6 +34,7 @@
 {
     NSLog(@"storyLine: %@", story);
     myText.text = story;
+    [myText scrollRangeToVisible:NSMakeRange(myText.text.length-2, 1)];
 }
 
 - (IBAction)textFieldDidBeginEditing:(id)sender
@@ -53,21 +54,13 @@
     [UIView setAnimationDuration: movementDuration];
     self.view.frame = CGRectOffset(self.view.frame, 0, movement);
     
-   // CGRect newFrame = myText.frame;
-    
     if (up) {
-        //newFrame.size.height -= 150;
-        //newFrame.origin.y -= 150;
         [myText setFrame:CGRectMake(myText.frame.origin.x, 130, myText.frame.size.width, 180)];
     } else {
-        //newFrame.size.height += 150;
-        //newFrame.origin.y += 150;
         [myText setFrame:CGRectMake(myText.frame.origin.x, 20, myText.frame.size.width, 230)];
     }
-   // myText.frame = newFrame;
-    
-    
-    //myText.frame
+    [myText scrollRangeToVisible:NSMakeRange(myText.text.length-2, 1)];
+
     [UIView commitAnimations];
 }
 

@@ -89,7 +89,7 @@
         
         [storyPage updateText:storyLine];
         
-        NSLog(@"Am primit un mesaj nerecunoscut: %@", message);
+        //NSLog(@"Am primit un mesaj nerecunoscut: %@", message);
     }
     
 }

@@ -21,7 +21,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
    // NSUserDefaults *name = [NSUserDefaults standardUserDefaults];
-    myText.text = @"bau";
+    myText.text = @"";
+    
     //myText.text = [BigDelegate getStory];
     
    // NSLog(@"storyLine: %@", [BigDelegate getStory]);
@@ -33,6 +34,41 @@
 {
     NSLog(@"storyLine: %@", story);
     myText.text = story;
+}
+
+- (IBAction)textFieldDidBeginEditing:(id)sender
+{
+    [self animateTextField: sender up: YES];
+}
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up
+{
+    const int movementDistance = 130; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    
+   // CGRect newFrame = myText.frame;
+    
+    if (up) {
+        //newFrame.size.height -= 150;
+        //newFrame.origin.y -= 150;
+        [myText setFrame:CGRectMake(myText.frame.origin.x, 130, myText.frame.size.width, 180)];
+    } else {
+        //newFrame.size.height += 150;
+        //newFrame.origin.y += 150;
+        [myText setFrame:CGRectMake(myText.frame.origin.x, 20, myText.frame.size.width, 230)];
+    }
+   // myText.frame = newFrame;
+    
+    
+    //myText.frame
+    [UIView commitAnimations];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,14 +95,16 @@
     [BigDelegate insertWord:word];
 }
 
-- (IBAction)backgroundClick:(id)sender {
-    
+- (IBAction)backgroundClick:(id)sender
+{
 	[myWord resignFirstResponder];
     
 }
 
 - (IBAction)textFieldDoneEditing:(id)sender
 {
+    [self animateTextField: sender up: NO];
+    myWord.text = @"";
     [sender resignFirstResponder];
 }
 

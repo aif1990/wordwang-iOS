@@ -11,11 +11,13 @@
 @interface StoryPage : UIViewController {
     NSString *text;
     NSString *word;
-    
 }
 
 @property (weak, nonatomic) IBOutlet UITextView *myText;
 @property (weak, nonatomic) IBOutlet UITextField *myWord;
+
+- (IBAction)textFieldDidBeginEditing:(id)sender;
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up;
 
 -(IBAction)updateText:(id)sender;
 -(IBAction)sendWord:(id)sender;

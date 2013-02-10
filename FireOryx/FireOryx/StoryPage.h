@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface StoryPage : UIViewController {
     NSString *text;
     NSString *word;
+    NSString *suggestion;
 }
 
 @property (weak, nonatomic) IBOutlet UITextView *myText;
@@ -20,6 +22,7 @@
 - (void) animateTextField: (UITextField*) textField up: (BOOL) up;
 
 -(IBAction)updateText:(id)sender;
+-(IBAction)updateWord:(NSString*)sugg;
 -(IBAction)sendWord:(id)sender;
 - (IBAction)textFieldDoneEditing:(id)sender;
 -(IBAction)backgroundClick:(id)sender;

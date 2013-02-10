@@ -80,21 +80,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aN9-Uk-gTP" firstAttribute="centerX" secondItem="MbK-X8-Iee" secondAttribute="centerX" type="default" id="1Ol-po-QxU"/>
-                            <constraint firstItem="aN9-Uk-gTP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="131" id="1SS-9N-F4y"/>
                             <constraint firstAttribute="trailing" secondItem="z1m-f3-v5X" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1WP-z8-mgR"/>
                             <constraint firstItem="DhJ-ic-C1F" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="2mP-X3-vEe"/>
-                            <constraint firstItem="MbK-X8-Iee" firstAttribute="centerX" secondItem="DhJ-ic-C1F" secondAttribute="centerX" type="default" id="4z6-Je-Xs3"/>
                             <constraint firstAttribute="bottom" secondItem="z1m-f3-v5X" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="EJ8-sX-hmg"/>
                             <constraint firstAttribute="bottom" secondItem="cA9-F7-dYY" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Hkn-TS-Y64"/>
                             <constraint firstItem="QpR-N5-5g2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="JyY-Ai-UpR"/>
                             <constraint firstItem="DhJ-ic-C1F" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Krs-ns-ZEK"/>
+                            <constraint firstItem="MbK-X8-Iee" firstAttribute="top" secondItem="3" secondAttribute="top" constant="212" id="Pkl-gb-OyU"/>
+                            <constraint firstItem="aN9-Uk-gTP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="140" id="QR4-nF-7Wc"/>
+                            <constraint firstItem="aN9-Uk-gTP" firstAttribute="centerX" secondItem="DhJ-ic-C1F" secondAttribute="centerX" type="default" id="Scp-P2-96P"/>
                             <constraint firstItem="DhJ-ic-C1F" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="aeM-6a-Ot8"/>
                             <constraint firstItem="QpR-N5-5g2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="e5g-ig-86S"/>
                             <constraint firstItem="z1m-f3-v5X" firstAttribute="leading" secondItem="cA9-F7-dYY" secondAttribute="leading" type="default" id="f2U-XJ-2Vr"/>
                             <constraint firstItem="DhJ-ic-C1F" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="fyr-nC-Frr"/>
                             <constraint firstItem="z1m-f3-v5X" firstAttribute="top" secondItem="cA9-F7-dYY" secondAttribute="top" type="default" id="khD-0i-Ee5"/>
                             <constraint firstAttribute="trailing" secondItem="cA9-F7-dYY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rAI-qT-2Yv"/>
-                            <constraint firstItem="MbK-X8-Iee" firstAttribute="top" secondItem="aN9-Uk-gTP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ux8-rS-v60"/>
                         </constraints>
                     </view>
                     <connections>
@@ -156,10 +156,10 @@
                                     <constraint firstAttribute="height" constant="308" id="GCT-VK-cDt"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rzq-he-pJZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rzq-he-pJZ">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NZO-aT-VXZ"/>
                                     <constraint firstAttribute="width" constant="139" id="mWe-VI-jHb"/>
@@ -246,6 +246,7 @@
                 <relationship kind="action" name="textFieldDidBeginEditing:"/>
                 <relationship kind="action" name="textFieldDoneEditing:"/>
                 <relationship kind="action" name="updateText:"/>
+                <relationship kind="action" name="updateWord:" candidateClass="NSString"/>
                 <relationship kind="outlet" name="myText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="myWord" candidateClass="UITextField"/>
             </relationships>

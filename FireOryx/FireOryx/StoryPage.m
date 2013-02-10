@@ -10,8 +10,8 @@
 #import "AppDelegate.h"
 #import "SBJson.h"
 
-
 @implementation StoryPage
+
 @synthesize myText;
 @synthesize myWord;
 
@@ -22,6 +22,7 @@
     
    // NSUserDefaults *name = [NSUserDefaults standardUserDefaults];
     myText.text = @"";
+    myText.textAlignment = NSTextAlignmentJustified;
     
     //myText.text = [BigDelegate getStory];
     
@@ -35,6 +36,11 @@
     NSLog(@"storyLine: %@", story);
     myText.text = story;
     [myText scrollRangeToVisible:NSMakeRange(myText.text.length-2, 1)];
+}
+
+- (IBAction)updateWord:(NSString*)sugg
+{
+    suggestion = sugg;
 }
 
 - (IBAction)textFieldDidBeginEditing:(id)sender
@@ -84,6 +90,7 @@
 - (IBAction)sendWord:(id)sender
 {
     word = myWord.text;
+    myWord.text = suggestion;
     NSLog(@"word: %@", word);
     [BigDelegate insertWord:word];
 }
@@ -91,7 +98,6 @@
 - (IBAction)backgroundClick:(id)sender
 {
 	[myWord resignFirstResponder];
-    
 }
 
 - (IBAction)textFieldDoneEditing:(id)sender

@@ -61,14 +61,65 @@
         
         NSMutableDictionary* group = [args objectForKey:@"group"];
         
-       // NSLog(@"am group: %@", group);
+        NSMutableDictionary* groupCloud = [group objectForKey:@"groupCloud"];
+        
+        NSLog(@"am group: %@", groupCloud);
+        /*
+         {
+         11 =     {
+                    cloudBlock =         {
+                                            blockId = 11;
+                                            content =             {
+                                                blockContent = ana;
+                                                blockType = string;
+                                            };
+                                        };
+                    cloudUids =         (29);
+                };
+         }
+
+         */
+        
+        NSUInteger maxUp = 0;
+        
+        id newKey;
+        
+        for (id key in groupCloud)
+        {
+            NSMutableDictionary* groupChild = [groupCloud objectForKey:key];
+            
+            NSMutableArray* upvotePerWord = [groupChild objectForKey:@"cloudUids"];
+            NSLog(@"uids %@", upvotePerWord);
+            
+          NSUInteger sizeUpvote = upvotePerWord.count;
+            
+          if (sizeUpvote > maxUp)
+            {
+                maxUp = sizeUpvote;
+                newKey = key;
+            }
+        }
+        
+        NSMutableDictionary* upvote = [groupCloud objectForKey:newKey];
+        
+        NSLog(@"upvote: %@", upvote);
+        
+        NSMutableDictionary* cloudBlock = [upvote objectForKey:@"cloudBlock"];
+        
+        NSMutableDictionary* content = [cloudBlock objectForKey:@"content"];
+        
+        NSString* suggestion = [content objectForKey:@"blockContent"];
+        
+        NSLog(@"sugg: %@", suggestion);
+        
+        [storyPage updateWord:suggestion];
         
         NSMutableArray *story = [group objectForKey: @"groupStory"];
         
         NSMutableArray *storyData = [[NSMutableArray alloc] init];
         NSMutableDictionary *block;
         
-        NSLog(@"storyArray: %@ ", story);
+        //NSLog(@"storyArray: %@ ", story);
         
         for (block in story)
         {
@@ -112,7 +163,7 @@
 
 - (void) connect:(NSString* )group
 {
-    myWS = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://wang.abstractbinary.org:8888/ws"]]];
+    myWS = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://nh2.me:8888/ws"]]];
     
     myWS.delegate = self;
     

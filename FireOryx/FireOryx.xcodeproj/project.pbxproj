@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153D87DA16C7D7F70041DCDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153D87D916C7D7F70041DCDA /* AVFoundation.framework */; };
 		1563BDC916C69D0700185D78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDC816C69D0700185D78 /* UIKit.framework */; };
 		1563BDCB16C69D0700185D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDCA16C69D0700185D78 /* Foundation.framework */; };
 		1563BDCD16C69D0700185D78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563BDCC16C69D0700185D78 /* CoreGraphics.framework */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153D87D916C7D7F70041DCDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1563BDC516C69D0700185D78 /* FireOryx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireOryx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1563BDC816C69D0700185D78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1563BDCA16C69D0700185D78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153D87DA16C7D7F70041DCDA /* AVFoundation.framework in Frameworks */,
 				1563BEAD16C6CABD00185D78 /* libicucore.dylib in Frameworks */,
 				1563BEAB16C6CAA800185D78 /* Security.framework in Frameworks */,
 				1563BEA916C6CAA000185D78 /* CFNetwork.framework in Frameworks */,
@@ -176,13 +179,14 @@
 		1563BDBC16C69D0700185D78 = {
 			isa = PBXGroup;
 			children = (
+				1563BDCE16C69D0700185D78 /* FireOryx */,
+				153D87D916C7D7F70041DCDA /* AVFoundation.framework */,
 				1563BEAC16C6CABD00185D78 /* libicucore.dylib */,
 				1563BEAA16C6CAA800185D78 /* Security.framework */,
 				1563BEA816C6CAA000185D78 /* CFNetwork.framework */,
 				1563BEA616C6CA5000185D78 /* MobileCoreServices.framework */,
 				1563BE1A16C6B0C500185D78 /* cooltext913513874 copy.png */,
 				1563BE1816C6B0C000185D78 /* cooltext913513874.png */,
-				1563BDCE16C69D0700185D78 /* FireOryx */,
 				1563BDF516C69D0700185D78 /* FireOryxTests */,
 				1563BDC716C69D0700185D78 /* Frameworks */,
 				1563BDC616C69D0700185D78 /* Products */,

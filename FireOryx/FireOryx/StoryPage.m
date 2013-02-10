@@ -21,7 +21,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
    // NSUserDefaults *name = [NSUserDefaults standardUserDefaults];
-    myText.text = @"";
+    myText.text = suggestion;
     myText.textAlignment = NSTextAlignmentJustified;
     
     //myText.text = [BigDelegate getStory];
@@ -45,6 +45,7 @@
 
 - (IBAction)textFieldDidBeginEditing:(id)sender
 {
+    myWord.text = suggestion;
     [self animateTextField: sender up: YES];
 }
 
@@ -90,9 +91,14 @@
 - (IBAction)sendWord:(id)sender
 {
     word = myWord.text;
+    [sender resignFirstResponder];
+    
     myWord.text = suggestion;
-    NSLog(@"word: %@", word);
-    [BigDelegate insertWord:word];
+    
+    if (![word isEqual: @""])
+    {
+        [BigDelegate insertWord:word];
+    } 
 }
 
 - (IBAction)backgroundClick:(id)sender
@@ -103,7 +109,7 @@
 - (IBAction)textFieldDoneEditing:(id)sender
 {
     [self animateTextField: sender up: NO];
-    myWord.text = @"";
+    myWord.text = suggestion;
     [sender resignFirstResponder];
 }
 

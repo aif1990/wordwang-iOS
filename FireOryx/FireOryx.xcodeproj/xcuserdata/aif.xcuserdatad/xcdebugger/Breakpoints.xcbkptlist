@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FireOryx/StoryPage.m"
-         timestampString = "382204094.452991"
+         timestampString = "382204960.100188"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "95"
-         endingLineNumber = "95"
+         startingLineNumber = "101"
+         endingLineNumber = "101"
          landmarkName = "-sendWord:"
          landmarkType = "5">
       </FileBreakpoint>
